@@ -26,12 +26,14 @@ print(f"Current Balance: ${balance}")
 
 elif choice == "2":
 expense_name = input("\n Enter the expense: ")
+category = input("Enter the category: ")
 expense_amount = float(input("Enter the amount: "))
 expense_date = input("Enter the date (MM/DD/YYYY): ")
 balance -= expense_amount
 
-print("\n Income added successfully!")
-print(f"Source: {expense_source}")
+print("\n Expense added successfully!")
+print(f"Source: {expense_name}")
+print(f"Category: {category}")
 print(f"Amount: ${expense_amount}")
 print(f"Date: {expense_date}")
 print(f"Current balance: ${balance}")
